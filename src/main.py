@@ -1,4 +1,4 @@
-def greet(name):
+def greet(name: str):
     """Выводит приветствие на консоль.
 
     Args:
@@ -7,5 +7,5 @@ def greet(name):
     print(f"Привет, {name}!")
 
 if __name__ == "__main__":
-    user_name = input("Как тебя зовут? ")
+    user_name: str = input("Как тебя зовут? ")
     greet(user_name)
